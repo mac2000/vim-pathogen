@@ -1,3 +1,18 @@
+Installation
+============
+
+On Unix:
+
+	cd ~
+	git clone https://github.com/mac2000/vim-pathogen.git .vim
+	ln -s .vim/.vimrc .vimrc
+
+On Windows:
+
+	cd %HOMEPATH%
+	git clone https:github.com/mac2000/vim-pathogen.git vimfiles
+	mklink _vimrc vimfiles\.vimrc
+
 Managing your vim via git
 =========================
 
