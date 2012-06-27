@@ -4,3 +4,6 @@
 [submodule "bundle/ScrollColors"]
 	path = bundle/ScrollColors
 	url = https://github.com/vim-scripts/ScrollColors.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/mac2000/snipmate.vim.git

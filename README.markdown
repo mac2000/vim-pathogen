@@ -60,4 +60,7 @@ To commit your changes use folowing commands:
     git commit -am 'Commit message'
     git push
 
+Forking plugins
+===============
 
+Fork repository and add it as submodule
