@@ -8,6 +8,12 @@ private directories.
 Installation
 ------------
 
+    git clone https://github.com/mac2000/vim-pathogen.git
+    ln -s vim-pathogen ~/.vim
+    ln -s vim-pathogen/.vimrc ~/.vimrc
+
+
+
 Install to `~/.vim/autoload/pathogen.vim`.  Or copy and paste:
 
     mkdir -p ~/.vim/autoload ~/.vim/bundle; \
