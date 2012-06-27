@@ -7,3 +7,10 @@ syntax on
 
 map <silent><F3> :NEXTCOLOR<cr>
 map <silent><F2> :PREVCOLOR<cr>
+
+
+if has("win32")
+    source $HOME\vimfiles\langmap.cp1251.vim
+else
+    source $HOME/.vim/langmap.utf8.vim
+endif

@@ -75,3 +75,8 @@ Now to update from original repository:
 	cd bundle/snipmate
 	git pull upstream master
 	
+To save changes:
+
+	cd bundle/snipmate
+	git commit -am 'Commit message'
+	git push
