@@ -1,5 +1,27 @@
-pathogen.vim
-============
+Managing your vim via git
+=========================
+
+First of all you need to [fork](https://help.github.com/articles/fork-a-repo) [vim-pathogen](https://github.com/tpope/vim-pathogen).
+
+According to manual my steps was something like this:
+
+    cd %HOMEPATH%\Dropbox\Projects
+    git clone https://github.com/mac2000/vim-pathogen.git
+    cd vim-pathogen
+    git remote add upstream https://github.com/tpope/vim-pathogen.git
+
+When vim-pathogen updated, just run folowing commands:
+
+    git fetch upstream
+    git merge upstream/master
+
+To commit your changes use folowing commands:
+
+    git push
+
+Then clone it to your machine, something like:
+
+    git clone https://github.com/YOUR_USERNAME/vim-pathogen.git
 
 Manage your `'runtimepath'` with ease.  In practical terms, pathogen.vim
 makes it super easy to install plugins and runtime files in their own
