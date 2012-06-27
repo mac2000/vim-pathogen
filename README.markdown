@@ -40,8 +40,7 @@ According to manual my steps was something like this:
 
 When vim-pathogen updated, just run folowing commands:
 
-    git fetch upstream
-    git merge upstream/master
+	git pull upstream master
 
 Adding plugins
 
@@ -64,3 +63,15 @@ Forking plugins
 ===============
 
 Fork repository and add it as submodule
+
+	git submodule add https://github.com/mac2000/snipmate.vim bundle/snipmate
+    	cd bundle/snipmate
+    	git remote add upstream https://github.com/msanders/snipmate.vim.git
+	git commit -am 'SnipMate added'
+	git push
+
+Now to update from original repository:
+
+	cd bundle/snipmate
+	git pull upstream master
+	
