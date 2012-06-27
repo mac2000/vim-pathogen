@@ -13,6 +13,19 @@ On Windows:
 	git clone https:github.com/mac2000/vim-pathogen.git vimfiles
 	mklink _vimrc vimfiles\.vimrc
 
+Manipulating
+============
+
+To update (get lates changes from github.com to local machine):
+	
+	git pull
+
+To save local changes to github:
+
+	git commit -am 'Commit message'
+	git push
+
+
 Managing your vim via git
 =========================
 
