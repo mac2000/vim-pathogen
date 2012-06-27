@@ -21,4 +21,4 @@ endif
 " Automatically change current directory to the of the file in the buffer
 autocmd BufEnter * cd %:p:h
 
-nmap <lead>ev :tabedit $MYVIMRC<CR>
+nmap <leader>ev :tabedit $MYVIMRC<CR>
