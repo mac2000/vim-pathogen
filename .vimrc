@@ -10,7 +10,8 @@ map <silent><F2> :PREVCOLOR<cr>
 
 
 if has("win32")
-    source $HOME\vimfiles\langmap.cp1251.vim
+	source $HOME\vimfiles\langmap.cp1251.vim
+	set iskeyword=@,48-57,_,192-255
 else
-    source $HOME/.vim/langmap.utf8.vim
+	source $HOME/.vim/langmap.utf8.vim
 endif
