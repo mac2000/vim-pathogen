@@ -1,6 +1,8 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+autocmd BufWritePost .vimrc source $MYVIMRC
+
 colorscheme rdark
 set number
 syntax on
@@ -15,3 +17,8 @@ if has("win32")
 else
 	source $HOME/.vim/langmap.utf8.vim
 endif
+
+" Automatically change current directory to the of the file in the buffer
+autocmd BufEnter * cd %:p:h
+
+nmap <lead>ev :tabedit $MYVIMRC<CR>
