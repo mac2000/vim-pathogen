@@ -18,7 +18,8 @@ else
 	source $HOME/.vim/langmap.utf8.vim
 endif
 
-" Automatically change current directory to the of the file in the buffer
-autocmd BufEnter * cd %:p:h
+" http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
+set autochdir
+"autocmd BufEnter * silent! lcd %:p:h
 
 nmap <leader>ev :tabedit $MYVIMRC<CR>
