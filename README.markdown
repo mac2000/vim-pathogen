@@ -17,6 +17,7 @@ When vim-pathogen updated, just run folowing commands:
 
 To commit your changes use folowing commands:
 
+    git commit -am 'Commit message'
     git push
 
 Then clone it to your machine, something like:
