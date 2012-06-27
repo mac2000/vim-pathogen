@@ -18,7 +18,7 @@ Manipulating
 
 To update (get lates changes from github.com to local machine):
 	
-	git pull
+	git pull && git submodule update --init
 
 To save local changes to github:
 
