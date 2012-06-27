@@ -53,6 +53,7 @@ Adding plugins
 On another machine
 
 	git pull
+	git submodule update --init
 	
 To commit your changes use folowing commands:
 
