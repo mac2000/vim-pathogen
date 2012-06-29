@@ -13,6 +13,12 @@ On Windows:
 	git clone https:github.com/mac2000/vim-pathogen.git vimfiles
 	mklink _vimrc vimfiles\.vimrc
 
+Run Vin in sinlge mode, add to `~/.bashrc`
+
+    g() { command gvim --remote-silent $@ || command gvim $@; }
+    vim() { command gvim --remote-silent $@ || command gvim $@; }
+    gvim() { command gvim --remote-silent $@ || command gvim $@; }
+
 Manipulating
 ============
 

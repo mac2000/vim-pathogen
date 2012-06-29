@@ -28,6 +28,6 @@ set noswapfile
 set autoread
 
 if has("gui_running")
-	set guioptions-=T
-	set guioptions-=m
+        set guioptions-=T
+        set guioptions-=m
 endif
