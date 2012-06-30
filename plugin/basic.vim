@@ -1,3 +1,4 @@
+set nowrap
 set nocompatible
 set wildmenu
 set hidden

@@ -34,9 +34,8 @@ set autochdir
 nmap <leader>ev :tabedit $MYVIMRC<CR>
 
 nmap <leader>l :set list!<CR>   
-
-set list
-set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
+"set list
+"set listchars=eol:$,tab:\|-,trail:~,extends:>,precedes:<
 
 if has("gui_running")
     set cursorline
