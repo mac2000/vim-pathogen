@@ -3,6 +3,7 @@ set wildmenu
 set hidden
 set number
 
+set clipboard=unnamed
 set backspace=indent,eol,start
 set t_Co=256
 
