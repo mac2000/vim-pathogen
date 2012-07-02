@@ -50,3 +50,4 @@ nmap _+ :call Preserve("normal gg=G")<CR> " Shift + - + =
 nmap _^ :call Preserve("%s/^\\s\\*$//e")<CR> " Shift + - + 6 
 
 au BufRead,BufNewFile *.md set filetype=mkd
+au Syntax *.md normal zR
