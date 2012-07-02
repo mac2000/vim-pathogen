@@ -1,3 +1,3 @@
-nmap <buffer> ds* F*x,.
-nmap <buffer> ds_ F_x,.
+nmap <buffer> ds* maF*x,.`ah
+nmap <buffer> ds_ maF_x,.`ah
 
