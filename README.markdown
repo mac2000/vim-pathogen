@@ -1,3 +1,10 @@
+TODO
+====
+
+http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+
+check script that will auto align all
+
 Installation
 ============
 
