@@ -13,3 +13,6 @@
 [submodule "bundle/mkd"]
 	path = bundle/mkd
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
