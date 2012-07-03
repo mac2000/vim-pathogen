@@ -13,11 +13,28 @@ On Windows:
 	git clone https:github.com/mac2000/vim-pathogen.git vimfiles
 	mklink _vimrc vimfiles\.vimrc
 
-Run Vin in sinlge mode, add to `~/.bashrc`
+To run gVim in sinlge mode from command line, add to `~/.bash_aliases`
 
     g() { command gvim --remote-silent $@ || command gvim $@; }
     vim() { command gvim --remote-silent $@ || command gvim $@; }
     gvim() { command gvim --remote-silent $@ || command gvim $@; }
+
+To run Vim in single mode from X
+
+    mkdir -p ~/.local/share/applications
+    touch ~/.local/share/applications/default.list
+    tee ~/.local/share/applications/default.list << EOF
+    [Default Applications]
+    text/plain=gvim.desktop
+    EOF
+
+    cp /usr/share/applications/gvim.desktop ~/.local/share/applications/
+    sed -i 's/Exec=gvim -f %F/Exec=gvim --remote-silent %F/g' ~/.local/share/applications/gvim.desktop
+
+To replace default editor:
+
+    sudo update-alternatives --config editor
+    sudo update-alternatives --config gnome-text-editor
 
 Manipulating
 ============
