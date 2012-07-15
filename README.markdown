@@ -12,12 +12,14 @@ On Unix:
 
 	cd ~
 	git clone https://github.com/mac2000/vim-pathogen.git .vim
+	git submodule update --init
 	ln -s .vim/.vimrc .vimrc
 
 On Windows:
 
 	cd %HOMEPATH%
 	git clone https:github.com/mac2000/vim-pathogen.git vimfiles
+	git submodule update --init
 	mklink _vimrc vimfiles\.vimrc
 
 To run gVim in sinlge mode from command line, add to `~/.bash_aliases`
