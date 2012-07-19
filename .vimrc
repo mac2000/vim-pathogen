@@ -8,7 +8,7 @@ map <silent><F3> :NEXTCOLOR<cr>
 map <silent><F2> :PREVCOLOR<cr>
 
 if has("gui_running")
-    "colorscheme darkbone
+    colorscheme darkbone
     "eclipse ekvoli rdark wombat darkbone
 endif
 
