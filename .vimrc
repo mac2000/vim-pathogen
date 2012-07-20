@@ -58,4 +58,4 @@ au BufRead,BufNewFile *.md set filetype=mkd
 au Syntax *.md normal zR
 
 " Saves file when Vim window loses focus
-au FocusLoast * :wa
+au FocusLost * :wa
