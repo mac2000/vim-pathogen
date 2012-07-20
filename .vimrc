@@ -14,6 +14,7 @@ endif
 
 
 if has("win32")
+    map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
     source $HOME\vimfiles\langmap.cp1251.vim
     set iskeyword=@,48-57,_,192-255
 
@@ -23,6 +24,7 @@ if has("win32")
         set guifont=Lucida_Console:h12:cRUSSIAN
     endif
 else
+    map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
     source $HOME/.vim/langmap.utf8.vim
 endif
 
@@ -43,6 +45,9 @@ if has("gui_running")
     "hi CursorColumn guibg=#333333
 endif
 
+map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
+map <leader>c <C-_><C-_>
+imap jj <ESC>
 
 nmap <leader>r :retab!<CR>
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR> " Shift + - + 4
@@ -51,3 +56,6 @@ nmap _^ :call Preserve("%s/^\\s\\*$//e")<CR> " Shift + - + 6
 
 au BufRead,BufNewFile *.md set filetype=mkd
 au Syntax *.md normal zR
+
+" Saves file when Vim window loses focus
+au FocusLost * :wa
