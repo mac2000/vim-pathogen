@@ -112,3 +112,11 @@ To save changes:
 	cd bundle/snipmate
 	git commit -am 'Commit message'
 	git push
+
+Modules
+=======
+
+sparkup - `Ctrl + e`
+tabular - `:Tab/=` - where `=` is selector, `:Tab/:\zs`
+tcomment - `Ctrl + -, Ctrl + -`
+
