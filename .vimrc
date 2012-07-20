@@ -14,6 +14,7 @@ endif
 
 
 if has("win32")
+    map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
     source $HOME\vimfiles\langmap.cp1251.vim
     set iskeyword=@,48-57,_,192-255
 
@@ -23,6 +24,7 @@ if has("win32")
         set guifont=Lucida_Console:h12:cRUSSIAN
     endif
 else
+    map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
     source $HOME/.vim/langmap.utf8.vim
 endif
 
