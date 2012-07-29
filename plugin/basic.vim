@@ -4,7 +4,12 @@ set wildmenu
 set hidden
 set number
 
-set clipboard=unnamed
+if has("win32")
+    set clipboard=unnamed
+else
+    set clipboard=unnamedplus
+endif
+
 set backspace=indent,eol,start
 set t_Co=256
 
