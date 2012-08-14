@@ -26,7 +26,13 @@ if has("win32")
 else
     map <leader>d :cd $HOME/Desktop<CR>:pwd<CR>
     source $HOME/.vim/langmap.utf8.vim
+
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        colorscheme wombat256
+    endif
 endif
+
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 set autochdir
