@@ -63,6 +63,7 @@ nmap _^ :call Preserve("%s/^\\s\\*$//e")<CR> " Shift + - + 6
 au BufRead,BufNewFile *.md set filetype=mkd
 au BufRead,BufNewFile *.scss set filetype=scss
 au Syntax *.md normal zR
+au BufRead,BufNewFile .gitignore,.gitconfig,.gitmodules set noexpandtab
 
 " Saves file when Vim window loses focus
 au FocusLost * :wa
