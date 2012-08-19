@@ -1,9 +1,9 @@
 TODO
 ====
 
-http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
+https://github.com/maksimr/vim-jsbeautify
+https://github.com/hallettj/jslint.vim
 
-check script that will auto align all
 
 Installation
 ============
