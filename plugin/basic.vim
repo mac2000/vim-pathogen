@@ -4,6 +4,8 @@ set wildmenu
 set hidden
 set number
 
+set laststatus=2
+
 if has("win32")
     set clipboard=unnamed
 else

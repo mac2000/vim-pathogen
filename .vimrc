@@ -66,3 +66,7 @@ au Syntax *.md normal zR
 
 " Saves file when Vim window loses focus
 au FocusLost * :wa
+
+" MiniBuffExplorer Ctrl + Tab - switch between buffers
+let g:miniBufExplMapCTabSwitchBufs = 1 
+nmap <TAB> :bn<CR>
