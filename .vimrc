@@ -35,7 +35,8 @@ endif
 
 
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
-set autochdir
+" set autochdir -- REMOVED
+nmap cd :cd %:p:h<CR>:pwd<CR>
 "autocmd BufEnter * silent! lcd %:p:h
 
 
