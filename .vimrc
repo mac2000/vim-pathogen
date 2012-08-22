@@ -72,3 +72,4 @@ au BufRead,BufNewFile .gitignore,.gitconfig,.gitmodules set noexpandtab
 " MiniBuffExplorer Ctrl + Tab - switch between buffers
 let g:miniBufExplMapCTabSwitchBufs = 1 
 nmap <TAB> :bn<CR>
+nmap <ESC><ESC> :bd<CR>
