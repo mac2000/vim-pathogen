@@ -67,7 +67,7 @@ au Syntax *.md normal zR
 au BufRead,BufNewFile .gitignore,.gitconfig,.gitmodules set noexpandtab
 
 " Saves file when Vim window loses focus
-au FocusLost * :wa
+" au FocusLost * :wa - annoing on not saved buffers!
 
 " MiniBuffExplorer Ctrl + Tab - switch between buffers
 let g:miniBufExplMapCTabSwitchBufs = 1 
