@@ -73,3 +73,4 @@ au BufRead,BufNewFile .gitignore,.gitconfig,.gitmodules set noexpandtab
 let g:miniBufExplMapCTabSwitchBufs = 1 
 nmap <TAB> :bn<CR>
 nmap <ESC><ESC> :bd<CR>
+nmap <ESC><ESC><ESC> :bufdo! bd<CR>:bd<CR>
