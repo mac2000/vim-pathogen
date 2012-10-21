@@ -1,2 +1,5 @@
 .netrwhist
 *.swp
+bundle/*
+bundle/minibufexpl
+bundle/minibufexpl/doc/tags

@@ -9,7 +9,9 @@ set laststatus=2
 if has("win32")
     set clipboard=unnamed
 else
-    set clipboard=unnamedplus
+    if has("unnamedplus")
+        set clipboard=unnamedplus
+    endif
 endif
 
 set backspace=indent,eol,start
